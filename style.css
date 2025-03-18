@@ -1,0 +1,23 @@
+form {
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+textarea {
+  resize: none;
+  height: 9rem;
+  border-radius: 2rem;
+  outline: none;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+textarea::placeholder {
+  font-weight: 500;
+}
+
+@media screen and (max-width: 900px) {
+  textarea {
+    width: 90vw;
+  }
+}
