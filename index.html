@@ -14,18 +14,24 @@
     <title>Document</title>
   </head>
   <body>
-    <form action="#">
+    <form class="request" action="#">
       <textarea
         name=""
-        id=""
+        id="request"
         cols="100"
         rows="6"
         placeholder="Tanya Apa Saja..."
         required
         autofocus
       >
+Tanya apa saja..
       </textarea>
       <button>kirim</button>
     </form>
+    <form action="" class="response">
+      <p class="question hidden"></p>
+      <textarea name="" id="response" readonly></textarea>
+    </form>
+    <script src="script.js"></script>
   </body>
 </html>

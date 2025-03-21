@@ -1,10 +1,10 @@
-form {
+.request {
   position: absolute;
   bottom: -5%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-textarea {
+#request {
   font-family: "Roboto", sans-serif;
   resize: none;
   height: 9rem;
@@ -17,11 +17,11 @@ textarea {
   font-weight: 400;
   font-size: 1.1rem;
 }
-textarea:focus {
+#request:focus {
   box-shadow: 0px 1px 4px 2px;
   border-style: inset;
 }
-textarea::placeholder {
+#request::placeholder {
   font-weight: 500;
   font-family: "Inter", sans-serif;
 }
@@ -54,9 +54,45 @@ button:hover {
 button:active {
   box-shadow: 0px 2px 3px 2px;
 }
+.question {
+  text-align: justify;
+  width: 50%;
+  position: absolute;
+  right: 0.5rem;
+  border: 0.05rem solid black;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #dbdbdb;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  letter-spacing: 0.05rem;
+}
+.hidden {
+  visibility: hidden;
+}
+#response {
+  position: absolute;
+  right: 0.5rem;
+  top: 15%;
+  min-width: 50%;
+  min-height: 20%;
+  width: auto;
+  height: auto;
+  font-size: 1.1rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.05rem;
+  resize: none;
+  border: none;
+  outline: none;
+}
 
 @media screen and (max-width: 900px) {
   textarea {
     width: 90vw;
+  }
+  .question {
+    width: 75%;
   }
 }
