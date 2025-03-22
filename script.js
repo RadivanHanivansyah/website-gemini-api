@@ -2,7 +2,9 @@ const button = document.querySelector('button');
 const textBox = document.querySelector('#request');
 const text = document.querySelector('.question');
 const answer = document.querySelector('#response');
+
 textBox.value = ""
+answer.classList.remove('normal');
 button.addEventListener('click', () => {
     answer.classList.add('normal');
     text.classList.remove('hidden');
