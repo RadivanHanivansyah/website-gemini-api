@@ -4,6 +4,7 @@ const text = document.querySelector('.question');
 const answer = document.querySelector('#response');
 textBox.value = ""
 button.addEventListener('click', () => {
+    answer.classList.add('normal');
     text.classList.remove('hidden');
     answer.textContent = "";
     answer.classList.replace('response-text', 'normal');
