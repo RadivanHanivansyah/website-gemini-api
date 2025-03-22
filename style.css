@@ -129,4 +129,7 @@ button:active {
   .question {
     width: 75%;
   }
+  .response-text {
+    width: 90vw;
+  }
 }
